@@ -28,4 +28,9 @@ export default defineConfig(async () => ({
       ignored: ["**/src-tauri/**"],
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['@/components/QuoteCard.vue','@/components/CountdownCard.vue'],
+    },
+  },
 }));
